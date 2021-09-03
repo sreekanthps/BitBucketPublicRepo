@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2528A84B7DFF8DB7E6CF0564 /* Pods_BitBucketList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A86B87E83F5CBD254653893A /* Pods_BitBucketList.framework */; };
+		D14C4EE626DD1D0600782705 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EE526DD1D0600782705 /* SplashView.swift */; };
+		D14C4EEC26DD1D0D00782705 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EEB26DD1D0D00782705 /* SplashViewController.swift */; };
+		D14C4EF726DD1D2C00782705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF126DD1D2C00782705 /* Constants.swift */; };
+		D14C4EF826DD1D2C00782705 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF226DD1D2C00782705 /* UIColorExtension.swift */; };
+		D14C4EF926DD1D2C00782705 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF326DD1D2C00782705 /* UIImageExtension.swift */; };
+		D14C4EFA26DD1D2C00782705 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF426DD1D2C00782705 /* ColorsHelper.swift */; };
+		D14C4EFB26DD1D2C00782705 /* UINavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF526DD1D2C00782705 /* UINavigationHelper.swift */; };
+		D14C4EFC26DD1D2C00782705 /* ActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4EF626DD1D2C00782705 /* ActionDelegate.swift */; };
+		D14C4F0226DDB63A00782705 /* bitbucketrepolist.json in Resources */ = {isa = PBXBuildFile; fileRef = D14C4F0126DDB63A00782705 /* bitbucketrepolist.json */; };
+		D14C4F2426DDB98900782705 /* RepoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F1826DDB98900782705 /* RepoListPresenter.swift */; };
+		D14C4F2526DDB98900782705 /* RepoListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F1A26DDB98900782705 /* RepoListProtocol.swift */; };
+		D14C4F2726DDB98900782705 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F1D26DDB98900782705 /* RepoListView.swift */; };
+		D14C4F2826DDB98900782705 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F1E26DDB98900782705 /* RepoListViewController.swift */; };
+		D14C4F2926DDB98900782705 /* RepoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F2026DDB98900782705 /* RepoListInteractor.swift */; };
+		D14C4F2A26DDB98900782705 /* RepoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F2226DDB98900782705 /* RepoListRouter.swift */; };
+		D14C4F4526DDBB6D00782705 /* ConcreteProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F4426DDBB6D00782705 /* ConcreteProviderFactory.swift */; };
+		D14C4F4B26DDBB7400782705 /* RepoListDataTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F4A26DDBB7400782705 /* RepoListDataTarget.swift */; };
+		D14C4F5026DDBC7B00782705 /* RepoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F4F26DDBC7B00782705 /* RepoListService.swift */; };
+		D14C4F5D26DDBD8D00782705 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C4F5C26DDBD8D00782705 /* ListViewCell.swift */; };
+		D160A6CD26DD166E0058D009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160A6CC26DD166E0058D009 /* AppDelegate.swift */; };
+		D160A6D626DD16710058D009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D160A6D526DD16710058D009 /* Assets.xcassets */; };
+		D160A6D926DD16710058D009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D160A6D726DD16710058D009 /* LaunchScreen.storyboard */; };
+		D160A6E426DD16710058D009 /* BitBucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160A6E326DD16710058D009 /* BitBucketListTests.swift */; };
+		D160A6EF26DD16710058D009 /* BitBucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D160A6EE26DD16710058D009 /* BitBucketListUITests.swift */; };
+		D1854A2726E08D4D00CE4EA1 /* NextButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1854A2626E08D4D00CE4EA1 /* NextButtonCell.swift */; };
+		D1854A5026E1060800CE4EA1 /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1854A4F26E1060800CE4EA1 /* RepoDetailsViewController.swift */; };
+		D1854A6A26E1131600CE4EA1 /* RepoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1854A6926E1131600CE4EA1 /* RepoDetailsView.swift */; };
+		D1854A7A26E153E900CE4EA1 /* ImageDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1854A7926E153E900CE4EA1 /* ImageDetailsView.swift */; };
+		D197673426E2699600C700E5 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197673326E2699600C700E5 /* Units.swift */; };
+		D197674426E29FCB00C700E5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197674326E29FCB00C700E5 /* StringExtension.swift */; };
+		D1F7A85926DFAC2D005981CE /* BitbucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F7A85826DFAC2D005981CE /* BitbucketList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D160A6E026DD16710058D009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D160A6C126DD166E0058D009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D160A6C826DD166E0058D009;
+			remoteInfo = BitBucketList;
+		};
+		D160A6EB26DD16710058D009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D160A6C126DD166E0058D009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D160A6C826DD166E0058D009;
+			remoteInfo = BitBucketList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89F210B81F3CFD825100BF05 /* Pods-BitBucketList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBucketList.debug.xcconfig"; path = "Target Support Files/Pods-BitBucketList/Pods-BitBucketList.debug.xcconfig"; sourceTree = "<group>"; };
+		A86B87E83F5CBD254653893A /* Pods_BitBucketList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitBucketList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF796DE4214B3B0F39922EEF /* Pods-BitBucketList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitBucketList.release.xcconfig"; path = "Target Support Files/Pods-BitBucketList/Pods-BitBucketList.release.xcconfig"; sourceTree = "<group>"; };
+		D14C4EE526DD1D0600782705 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D14C4EEB26DD1D0D00782705 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D14C4EF126DD1D2C00782705 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D14C4EF226DD1D2C00782705 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		D14C4EF326DD1D2C00782705 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		D14C4EF426DD1D2C00782705 /* ColorsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
+		D14C4EF526DD1D2C00782705 /* UINavigationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationHelper.swift; sourceTree = "<group>"; };
+		D14C4EF626DD1D2C00782705 /* ActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDelegate.swift; sourceTree = "<group>"; };
+		D14C4F0126DDB63A00782705 /* bitbucketrepolist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bitbucketrepolist.json; sourceTree = "<group>"; };
+		D14C4F1826DDB98900782705 /* RepoListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListPresenter.swift; sourceTree = "<group>"; };
+		D14C4F1A26DDB98900782705 /* RepoListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListProtocol.swift; sourceTree = "<group>"; };
+		D14C4F1D26DDB98900782705 /* RepoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
+		D14C4F1E26DDB98900782705 /* RepoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		D14C4F2026DDB98900782705 /* RepoListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListInteractor.swift; sourceTree = "<group>"; };
+		D14C4F2226DDB98900782705 /* RepoListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListRouter.swift; sourceTree = "<group>"; };
+		D14C4F4426DDBB6D00782705 /* ConcreteProviderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteProviderFactory.swift; sourceTree = "<group>"; };
+		D14C4F4A26DDBB7400782705 /* RepoListDataTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListDataTarget.swift; sourceTree = "<group>"; };
+		D14C4F4F26DDBC7B00782705 /* RepoListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoListService.swift; sourceTree = "<group>"; };
+		D14C4F5C26DDBD8D00782705 /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		D160A6C926DD166E0058D009 /* BitBucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D160A6CC26DD166E0058D009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D160A6D526DD16710058D009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D160A6D826DD16710058D009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D160A6DA26DD16710058D009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D160A6DF26DD16710058D009 /* BitBucketListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBucketListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D160A6E326DD16710058D009 /* BitBucketListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketListTests.swift; sourceTree = "<group>"; };
+		D160A6E526DD16710058D009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D160A6EA26DD16710058D009 /* BitBucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D160A6EE26DD16710058D009 /* BitBucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketListUITests.swift; sourceTree = "<group>"; };
+		D160A6F026DD16710058D009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1854A2626E08D4D00CE4EA1 /* NextButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonCell.swift; sourceTree = "<group>"; };
+		D1854A4F26E1060800CE4EA1 /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
+		D1854A6926E1131600CE4EA1 /* RepoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsView.swift; sourceTree = "<group>"; };
+		D1854A7926E153E900CE4EA1 /* ImageDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsView.swift; sourceTree = "<group>"; };
+		D197673326E2699600C700E5 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		D197674326E29FCB00C700E5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D1F7A85826DFAC2D005981CE /* BitbucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitbucketList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D160A6C626DD166E0058D009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2528A84B7DFF8DB7E6CF0564 /* Pods_BitBucketList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6DC26DD16710058D009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6E726DD16710058D009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1ABB35F2AFF1EB27C9BBDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89F210B81F3CFD825100BF05 /* Pods-BitBucketList.debug.xcconfig */,
+				CF796DE4214B3B0F39922EEF /* Pods-BitBucketList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4086C6394C44D2CE8D6C409A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A86B87E83F5CBD254653893A /* Pods_BitBucketList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14C4EE226DD1CE000782705 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D1854A2E26E0C7DA00CE4EA1 /* RepoDetails */,
+				D14C4F1426DDB98900782705 /* RepoList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D14C4EE326DD1CEE00782705 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4EEA26DD1D0D00782705 /* Controller */,
+				D14C4EE426DD1D0600782705 /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D14C4EE426DD1D0600782705 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4EE526DD1D0600782705 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D14C4EEA26DD1D0D00782705 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4EEB26DD1D0D00782705 /* SplashViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D14C4EF026DD1D2C00782705 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4EF126DD1D2C00782705 /* Constants.swift */,
+				D14C4EF226DD1D2C00782705 /* UIColorExtension.swift */,
+				D14C4EF326DD1D2C00782705 /* UIImageExtension.swift */,
+				D14C4EF426DD1D2C00782705 /* ColorsHelper.swift */,
+				D14C4EF526DD1D2C00782705 /* UINavigationHelper.swift */,
+				D14C4EF626DD1D2C00782705 /* ActionDelegate.swift */,
+				D197673326E2699600C700E5 /* Units.swift */,
+				D197674326E29FCB00C700E5 /* StringExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D14C4F0026DDB03E00782705 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F0126DDB63A00782705 /* bitbucketrepolist.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		D14C4F1426DDB98900782705 /* RepoList */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F1526DDB98900782705 /* Entity */,
+				D14C4F1726DDB98900782705 /* Presenter */,
+				D14C4F1926DDB98900782705 /* Protocol */,
+				D14C4F1C26DDB98900782705 /* View */,
+				D14C4F1F26DDB98900782705 /* Interactor */,
+				D14C4F2126DDB98900782705 /* Router */,
+			);
+			path = RepoList;
+			sourceTree = "<group>";
+		};
+		D14C4F1526DDB98900782705 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D1F7A85826DFAC2D005981CE /* BitbucketList.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D14C4F1726DDB98900782705 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F1826DDB98900782705 /* RepoListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D14C4F1926DDB98900782705 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F1A26DDB98900782705 /* RepoListProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D14C4F1C26DDB98900782705 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F1D26DDB98900782705 /* RepoListView.swift */,
+				D14C4F1E26DDB98900782705 /* RepoListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D14C4F1F26DDB98900782705 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F2026DDB98900782705 /* RepoListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D14C4F2126DDB98900782705 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F2226DDB98900782705 /* RepoListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D14C4F4326DDBB6D00782705 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F4426DDBB6D00782705 /* ConcreteProviderFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		D14C4F4926DDBB7400782705 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F4F26DDBC7B00782705 /* RepoListService.swift */,
+				D14C4F4A26DDBB7400782705 /* RepoListDataTarget.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D14C4F5A26DDBD8D00782705 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F5B26DDBD8D00782705 /* TableCellTemplate */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		D14C4F5B26DDBD8D00782705 /* TableCellTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F5C26DDBD8D00782705 /* ListViewCell.swift */,
+				D1854A2626E08D4D00CE4EA1 /* NextButtonCell.swift */,
+			);
+			path = TableCellTemplate;
+			sourceTree = "<group>";
+		};
+		D160A6C026DD166E0058D009 = {
+			isa = PBXGroup;
+			children = (
+				D160A6CB26DD166E0058D009 /* BitBucketList */,
+				D160A6E226DD16710058D009 /* BitBucketListTests */,
+				D160A6ED26DD16710058D009 /* BitBucketListUITests */,
+				D160A6CA26DD166E0058D009 /* Products */,
+				3F1ABB35F2AFF1EB27C9BBDC /* Pods */,
+				4086C6394C44D2CE8D6C409A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D160A6CA26DD166E0058D009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D160A6C926DD166E0058D009 /* BitBucketList.app */,
+				D160A6DF26DD16710058D009 /* BitBucketListTests.xctest */,
+				D160A6EA26DD16710058D009 /* BitBucketListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D160A6CB26DD166E0058D009 /* BitBucketList */ = {
+			isa = PBXGroup;
+			children = (
+				D14C4F5A26DDBD8D00782705 /* Templates */,
+				D14C4F4926DDBB7400782705 /* Service */,
+				D14C4F4326DDBB6D00782705 /* Factory */,
+				D14C4F0026DDB03E00782705 /* Animation */,
+				D14C4EF026DD1D2C00782705 /* Utilities */,
+				D14C4EE326DD1CEE00782705 /* Splash */,
+				D14C4EE226DD1CE000782705 /* Modules */,
+				D160A6CC26DD166E0058D009 /* AppDelegate.swift */,
+				D160A6D526DD16710058D009 /* Assets.xcassets */,
+				D160A6D726DD16710058D009 /* LaunchScreen.storyboard */,
+				D160A6DA26DD16710058D009 /* Info.plist */,
+			);
+			path = BitBucketList;
+			sourceTree = "<group>";
+		};
+		D160A6E226DD16710058D009 /* BitBucketListTests */ = {
+			isa = PBXGroup;
+			children = (
+				D160A6E326DD16710058D009 /* BitBucketListTests.swift */,
+				D160A6E526DD16710058D009 /* Info.plist */,
+			);
+			path = BitBucketListTests;
+			sourceTree = "<group>";
+		};
+		D160A6ED26DD16710058D009 /* BitBucketListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D160A6EE26DD16710058D009 /* BitBucketListUITests.swift */,
+				D160A6F026DD16710058D009 /* Info.plist */,
+			);
+			path = BitBucketListUITests;
+			sourceTree = "<group>";
+		};
+		D1854A2E26E0C7DA00CE4EA1 /* RepoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D1854A7226E1134A00CE4EA1 /* View */,
+				D1854A7126E1133C00CE4EA1 /* Controller */,
+			);
+			path = RepoDetails;
+			sourceTree = "<group>";
+		};
+		D1854A7126E1133C00CE4EA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1854A4F26E1060800CE4EA1 /* RepoDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1854A7226E1134A00CE4EA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1854A6926E1131600CE4EA1 /* RepoDetailsView.swift */,
+				D1854A7926E153E900CE4EA1 /* ImageDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D160A6C826DD166E0058D009 /* BitBucketList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D160A6F326DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketList" */;
+			buildPhases = (
+				DAD6B406889E2B1B7FF0694F /* [CP] Check Pods Manifest.lock */,
+				D160A6C526DD166E0058D009 /* Sources */,
+				D160A6C626DD166E0058D009 /* Frameworks */,
+				D160A6C726DD166E0058D009 /* Resources */,
+				AECE057981A54F611B9356AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitBucketList;
+			productName = BitBucketList;
+			productReference = D160A6C926DD166E0058D009 /* BitBucketList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D160A6DE26DD16710058D009 /* BitBucketListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D160A6F626DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketListTests" */;
+			buildPhases = (
+				D160A6DB26DD16710058D009 /* Sources */,
+				D160A6DC26DD16710058D009 /* Frameworks */,
+				D160A6DD26DD16710058D009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D160A6E126DD16710058D009 /* PBXTargetDependency */,
+			);
+			name = BitBucketListTests;
+			productName = BitBucketListTests;
+			productReference = D160A6DF26DD16710058D009 /* BitBucketListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D160A6E926DD16710058D009 /* BitBucketListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D160A6F926DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketListUITests" */;
+			buildPhases = (
+				D160A6E626DD16710058D009 /* Sources */,
+				D160A6E726DD16710058D009 /* Frameworks */,
+				D160A6E826DD16710058D009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D160A6EC26DD16710058D009 /* PBXTargetDependency */,
+			);
+			name = BitBucketListUITests;
+			productName = BitBucketListUITests;
+			productReference = D160A6EA26DD16710058D009 /* BitBucketListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D160A6C126DD166E0058D009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D160A6C826DD166E0058D009 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D160A6DE26DD16710058D009 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D160A6C826DD166E0058D009;
+					};
+					D160A6E926DD16710058D009 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D160A6C826DD166E0058D009;
+					};
+				};
+			};
+			buildConfigurationList = D160A6C426DD166E0058D009 /* Build configuration list for PBXProject "BitBucketList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D160A6C026DD166E0058D009;
+			productRefGroup = D160A6CA26DD166E0058D009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D160A6C826DD166E0058D009 /* BitBucketList */,
+				D160A6DE26DD16710058D009 /* BitBucketListTests */,
+				D160A6E926DD16710058D009 /* BitBucketListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D160A6C726DD166E0058D009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D160A6D926DD16710058D009 /* LaunchScreen.storyboard in Resources */,
+				D14C4F0226DDB63A00782705 /* bitbucketrepolist.json in Resources */,
+				D160A6D626DD16710058D009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6DD26DD16710058D009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6E826DD16710058D009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AECE057981A54F611B9356AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBucketList/Pods-BitBucketList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitBucketList/Pods-BitBucketList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitBucketList/Pods-BitBucketList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD6B406889E2B1B7FF0694F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitBucketList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D160A6C526DD166E0058D009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C4F4526DDBB6D00782705 /* ConcreteProviderFactory.swift in Sources */,
+				D1F7A85926DFAC2D005981CE /* BitbucketList.swift in Sources */,
+				D14C4F2726DDB98900782705 /* RepoListView.swift in Sources */,
+				D197673426E2699600C700E5 /* Units.swift in Sources */,
+				D14C4F2826DDB98900782705 /* RepoListViewController.swift in Sources */,
+				D14C4EF726DD1D2C00782705 /* Constants.swift in Sources */,
+				D14C4EF926DD1D2C00782705 /* UIImageExtension.swift in Sources */,
+				D160A6CD26DD166E0058D009 /* AppDelegate.swift in Sources */,
+				D14C4EE626DD1D0600782705 /* SplashView.swift in Sources */,
+				D14C4F5026DDBC7B00782705 /* RepoListService.swift in Sources */,
+				D14C4F2426DDB98900782705 /* RepoListPresenter.swift in Sources */,
+				D1854A6A26E1131600CE4EA1 /* RepoDetailsView.swift in Sources */,
+				D14C4F2526DDB98900782705 /* RepoListProtocol.swift in Sources */,
+				D1854A2726E08D4D00CE4EA1 /* NextButtonCell.swift in Sources */,
+				D1854A7A26E153E900CE4EA1 /* ImageDetailsView.swift in Sources */,
+				D1854A5026E1060800CE4EA1 /* RepoDetailsViewController.swift in Sources */,
+				D14C4F4B26DDBB7400782705 /* RepoListDataTarget.swift in Sources */,
+				D14C4EFB26DD1D2C00782705 /* UINavigationHelper.swift in Sources */,
+				D14C4F5D26DDBD8D00782705 /* ListViewCell.swift in Sources */,
+				D14C4EEC26DD1D0D00782705 /* SplashViewController.swift in Sources */,
+				D14C4EF826DD1D2C00782705 /* UIColorExtension.swift in Sources */,
+				D14C4EFC26DD1D2C00782705 /* ActionDelegate.swift in Sources */,
+				D14C4F2926DDB98900782705 /* RepoListInteractor.swift in Sources */,
+				D14C4EFA26DD1D2C00782705 /* ColorsHelper.swift in Sources */,
+				D197674426E29FCB00C700E5 /* StringExtension.swift in Sources */,
+				D14C4F2A26DDB98900782705 /* RepoListRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6DB26DD16710058D009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D160A6E426DD16710058D009 /* BitBucketListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D160A6E626DD16710058D009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D160A6EF26DD16710058D009 /* BitBucketListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D160A6E126DD16710058D009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D160A6C826DD166E0058D009 /* BitBucketList */;
+			targetProxy = D160A6E026DD16710058D009 /* PBXContainerItemProxy */;
+		};
+		D160A6EC26DD16710058D009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D160A6C826DD166E0058D009 /* BitBucketList */;
+			targetProxy = D160A6EB26DD16710058D009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D160A6D726DD16710058D009 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D160A6D826DD16710058D009 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D160A6F126DD16710058D009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D160A6F226DD16710058D009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D160A6F426DD16710058D009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F210B81F3CFD825100BF05 /* Pods-BitBucketList.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D160A6F526DD16710058D009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF796DE4214B3B0F39922EEF /* Pods-BitBucketList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D160A6F726DD16710058D009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBucketList.app/BitBucketList";
+			};
+			name = Debug;
+		};
+		D160A6F826DD16710058D009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBucketList.app/BitBucketList";
+			};
+			name = Release;
+		};
+		D160A6FA26DD16710058D009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitBucketList;
+			};
+			name = Debug;
+		};
+		D160A6FB26DD16710058D009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BitBucketListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sk.bitbucket.list.BitBucketListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitBucketList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D160A6C426DD166E0058D009 /* Build configuration list for PBXProject "BitBucketList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D160A6F126DD16710058D009 /* Debug */,
+				D160A6F226DD16710058D009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D160A6F326DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D160A6F426DD16710058D009 /* Debug */,
+				D160A6F526DD16710058D009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D160A6F626DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D160A6F726DD16710058D009 /* Debug */,
+				D160A6F826DD16710058D009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D160A6F926DD16710058D009 /* Build configuration list for PBXNativeTarget "BitBucketListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D160A6FA26DD16710058D009 /* Debug */,
+				D160A6FB26DD16710058D009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D160A6C126DD166E0058D009 /* Project object */;
+}
